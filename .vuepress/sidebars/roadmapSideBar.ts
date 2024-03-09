@@ -8,4 +8,13 @@ export default [
       "快速上手.md",
     ],
   },
+  {
+    title: "基础功能",
+    collapsable: false,
+    children: [
+      "lc.md",
+      "lk.md",
+      "lf.md"
+    ],
+  },
 ];
