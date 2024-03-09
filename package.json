@@ -7,7 +7,7 @@
   "scripts": {
     "docs:dev": "vuepress dev .",
     "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider --max_old_space_size=8192 && vuepress build .",
-    "predeploy": "pnpm run build",
+    "predeploy": "pnpm run docs:build",
     "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
