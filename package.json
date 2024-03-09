@@ -6,7 +6,9 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev .",
-    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider --max_old_space_size=8192 && vuepress build ."
+    "docs:build": "set NODE_OPTIONS=--openssl-legacy-provider --max_old_space_size=8192 && vuepress build .",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
@@ -21,6 +23,7 @@
     "vuepress-plugin-tags": "^1.0.2"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "vuepress-plugin-code-copy": "^1.0.6",
     "vuepress-plugin-img-lazy": "^1.0.4"
   }
